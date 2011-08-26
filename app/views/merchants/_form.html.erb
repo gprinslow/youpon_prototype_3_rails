@@ -1,0 +1,69 @@
+<%= form_for(@merchant) do |f| %>
+  <% if @merchant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@merchant.errors.count, "error") %> prohibited this merchant from being saved:</h2>
+
+      <ul>
+      <% @merchant.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :byline %><br />
+    <%= f.text_field :byline %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :addressStreet1 %><br />
+    <%= f.text_field :addressStreet1 %>
+  </div>
+  <div class="field">
+    <%= f.label :addressStreet2 %><br />
+    <%= f.text_field :addressStreet2 %>
+  </div>
+  <div class="field">
+    <%= f.label :addressCity %><br />
+    <%= f.text_field :addressCity %>
+  </div>
+  <div class="field">
+    <%= f.label :addressState %><br />
+    <%= f.text_field :addressState %>
+  </div>
+  <div class="field">
+    <%= f.label :addressZip5 %><br />
+    <%= f.text_field :addressZip5 %>
+  </div>
+  <div class="field">
+    <%= f.label :addressZip4 %><br />
+    <%= f.text_field :addressZip4 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,6 @@
 Youpon::Application.routes.draw do
+  resources :merchants
+
   resources :offers
 
   resources :users

@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @merchant.name %>
+</p>
+
+<p>
+  <b>Byline:</b>
+  <%= @merchant.byline %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @merchant.category %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @merchant.description %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @merchant.phone %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @merchant.website %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @merchant.email %>
+</p>
+
+<p>
+  <b>Addressstreet1:</b>
+  <%= @merchant.addressStreet1 %>
+</p>
+
+<p>
+  <b>Addressstreet2:</b>
+  <%= @merchant.addressStreet2 %>
+</p>
+
+<p>
+  <b>Addresscity:</b>
+  <%= @merchant.addressCity %>
+</p>
+
+<p>
+  <b>Addressstate:</b>
+  <%= @merchant.addressState %>
+</p>
+
+<p>
+  <b>Addresszip5:</b>
+  <%= @merchant.addressZip5 %>
+</p>
+
+<p>
+  <b>Addresszip4:</b>
+  <%= @merchant.addressZip4 %>
+</p>
+
+
+<%= link_to 'Edit', edit_merchant_path(@merchant) %> |
+<%= link_to 'Back', merchants_path %>

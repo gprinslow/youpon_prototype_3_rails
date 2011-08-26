@@ -10,7 +10,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110826171608) do
+ActiveRecord::Schema.define(:version => 20110826181743) do
+
+  create_table "offers", :force => true do |t|
+    t.integer  "merchant_id"
+    t.string   "mode"
+    t.string   "title"
+    t.string   "byline"
+    t.string   "category"
+    t.string   "description"
+    t.string   "terms"
+    t.string   "retailPrice"
+    t.string   "discountPrice"
+    t.string   "discountPercent"
+    t.string   "discountValue"
+    t.date     "start"
+    t.date     "end"
+    t.integer  "numberOffered"
+    t.boolean  "validationRequired"
+    t.integer  "stampsRequired"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username"

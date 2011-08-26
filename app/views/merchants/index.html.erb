@@ -1,0 +1,47 @@
+<h1>Listing merchants</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Byline</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>Email</th>
+    <th>Addressstreet1</th>
+    <th>Addressstreet2</th>
+    <th>Addresscity</th>
+    <th>Addressstate</th>
+    <th>Addresszip5</th>
+    <th>Addresszip4</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @merchants.each do |merchant| %>
+  <tr>
+    <td><%= merchant.name %></td>
+    <td><%= merchant.byline %></td>
+    <td><%= merchant.category %></td>
+    <td><%= merchant.description %></td>
+    <td><%= merchant.phone %></td>
+    <td><%= merchant.website %></td>
+    <td><%= merchant.email %></td>
+    <td><%= merchant.addressStreet1 %></td>
+    <td><%= merchant.addressStreet2 %></td>
+    <td><%= merchant.addressCity %></td>
+    <td><%= merchant.addressState %></td>
+    <td><%= merchant.addressZip5 %></td>
+    <td><%= merchant.addressZip4 %></td>
+    <td><%= link_to 'Show', merchant %></td>
+    <td><%= link_to 'Edit', edit_merchant_path(merchant) %></td>
+    <td><%= link_to 'Destroy', merchant, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Merchant', new_merchant_path %>
