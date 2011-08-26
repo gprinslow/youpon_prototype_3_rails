@@ -1,0 +1,27 @@
+<h1>Listing redemptions</h1>
+
+<table>
+  <tr>
+    <th>Offer</th>
+    <th>User</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @redemptions.each do |redemption| %>
+  <tr>
+    <td><%= redemption.offer_id %></td>
+    <td><%= redemption.user_id %></td>
+    <td><%= redemption.status %></td>
+    <td><%= link_to 'Show', redemption %></td>
+    <td><%= link_to 'Edit', edit_redemption_path(redemption) %></td>
+    <td><%= link_to 'Destroy', redemption, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Redemption', new_redemption_path %>

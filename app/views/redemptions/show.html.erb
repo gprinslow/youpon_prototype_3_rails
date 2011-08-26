@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Offer:</b>
+  <%= @redemption.offer_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @redemption.user_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @redemption.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_redemption_path(@redemption) %> |
+<%= link_to 'Back', redemptions_path %>
