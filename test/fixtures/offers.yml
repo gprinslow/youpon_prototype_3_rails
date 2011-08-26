@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  merchant_id: 1
+  mode: MyString
+  title: MyString
+  byline: MyString
+  category: MyString
+  description: MyString
+  terms: MyString
+  retailPrice: MyString
+  discountPrice: MyString
+  discountPercent: MyString
+  discountValue: MyString
+  start: 2011-08-26
+  end: 2011-08-26
+  numberOffered: 1
+  validationRequired: false
+  stampsRequired: 1
+
+two:
+  merchant_id: 1
+  mode: MyString
+  title: MyString
+  byline: MyString
+  category: MyString
+  description: MyString
+  terms: MyString
+  retailPrice: MyString
+  discountPrice: MyString
+  discountPercent: MyString
+  discountValue: MyString
+  start: 2011-08-26
+  end: 2011-08-26
+  numberOffered: 1
+  validationRequired: false
+  stampsRequired: 1

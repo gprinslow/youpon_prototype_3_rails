@@ -1,0 +1,53 @@
+<h1>Listing offers</h1>
+
+<table>
+  <tr>
+    <th>Merchant</th>
+    <th>Mode</th>
+    <th>Title</th>
+    <th>Byline</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Terms</th>
+    <th>Retailprice</th>
+    <th>Discountprice</th>
+    <th>Discountpercent</th>
+    <th>Discountvalue</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Numberoffered</th>
+    <th>Validationrequired</th>
+    <th>Stampsrequired</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @offers.each do |offer| %>
+  <tr>
+    <td><%= offer.merchant_id %></td>
+    <td><%= offer.mode %></td>
+    <td><%= offer.title %></td>
+    <td><%= offer.byline %></td>
+    <td><%= offer.category %></td>
+    <td><%= offer.description %></td>
+    <td><%= offer.terms %></td>
+    <td><%= offer.retailPrice %></td>
+    <td><%= offer.discountPrice %></td>
+    <td><%= offer.discountPercent %></td>
+    <td><%= offer.discountValue %></td>
+    <td><%= offer.start %></td>
+    <td><%= offer.end %></td>
+    <td><%= offer.numberOffered %></td>
+    <td><%= offer.validationRequired %></td>
+    <td><%= offer.stampsRequired %></td>
+    <td><%= link_to 'Show', offer %></td>
+    <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+    <td><%= link_to 'Destroy', offer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Offer', new_offer_path %>
