@@ -1,4 +1,6 @@
 Youpon::Application.routes.draw do
+  resources :customers
+
   resources :redemptions
 
   get "home/index"
