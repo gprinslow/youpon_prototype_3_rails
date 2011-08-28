@@ -1,4 +1,6 @@
 Youpon::Application.routes.draw do
+  resources :employees
+
   resources :customers
 
   resources :redemptions
