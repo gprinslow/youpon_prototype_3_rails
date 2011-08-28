@@ -1,0 +1,25 @@
+<h1>Listing rosters</h1>
+
+<table>
+  <tr>
+    <th>Merchant</th>
+    <th>Employee</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rosters.each do |roster| %>
+  <tr>
+    <td><%= roster.merchant_id %></td>
+    <td><%= roster.employee_id %></td>
+    <td><%= link_to 'Show', roster %></td>
+    <td><%= link_to 'Edit', edit_roster_path(roster) %></td>
+    <td><%= link_to 'Destroy', roster, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Roster', new_roster_path %>

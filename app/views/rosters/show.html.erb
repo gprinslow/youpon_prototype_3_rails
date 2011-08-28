@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Merchant:</b>
+  <%= @roster.merchant_id %>
+</p>
+
+<p>
+  <b>Employee:</b>
+  <%= @roster.employee_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_roster_path(@roster) %> |
+<%= link_to 'Back', rosters_path %>
