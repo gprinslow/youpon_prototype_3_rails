@@ -1,4 +1,10 @@
 Youpon::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+  
+  get "home/index"
+
   resources :rosters
 
   resources :managers
@@ -8,8 +14,6 @@ Youpon::Application.routes.draw do
   resources :customers
 
   resources :redemptions
-
-  get "home/index"
 
   resources :merchants
 
