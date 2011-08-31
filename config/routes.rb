@@ -6,6 +6,8 @@ Youpon::Application.routes.draw do
   get "pages/contact"
   
   get "pages/about"
+  
+  get "pages/help"
 
   resources :rosters
 
