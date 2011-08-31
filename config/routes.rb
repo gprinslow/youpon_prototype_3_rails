@@ -1,9 +1,11 @@
 Youpon::Application.routes.draw do
+  get "home/index"
+
   get "pages/home"
 
   get "pages/contact"
   
-  get "home/index"
+  get "pages/about"
 
   resources :rosters
 
