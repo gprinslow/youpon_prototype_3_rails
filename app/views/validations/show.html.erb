@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Offer:</b>
+  <%= @validation.offer_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @validation.user_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @validation.status %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @validation.timestamps.created_on %>
+</p>
+
+
+<%= link_to 'Edit', edit_validation_path(@validation) %> |
+<%= link_to 'Back', validations_path %>

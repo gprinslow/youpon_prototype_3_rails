@@ -1,0 +1,31 @@
+<h1>Listing validations</h1>
+
+<table>
+  <tr>
+    <th>Offer</th>
+    <th>User</th>
+    <th>Status</th>
+	<th>Created</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @validations.each do |validation| %>
+  <tr>
+    <td><%= validation.offer_id %></td>
+    <td><%= validation.user_id %></td>
+    <td><%= validation.status %></td>
+	<td><%= validation.timestamps.created_on %>
+    <td><%= link_to 'Show', validation %></td>
+    <td><%= link_to 'Edit', edit_validation_path(validation) %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<br />
+<br />
+<br />
+<br />
+<%= link_to 'Home', root_path %>
