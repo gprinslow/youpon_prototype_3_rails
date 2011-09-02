@@ -3,7 +3,7 @@ class ValidationsController < ApplicationController
     # GET /validations
     # GET /validations.xml
     def index
-      @validations = Redemption.order("created_on").find_all_by_status(0)
+      @validations = Redemption.order("created_at").find_all_by_status(0)
 
       respond_to do |format|
         format.html # index.html.erb
