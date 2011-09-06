@@ -24,7 +24,9 @@ class UsersController < ApplicationController
   # GET /users/new
   # GET /users/new.xml
   def new
-    @user = User.new
+    @title = "Sign up"
+
+		@user = User.new
 
     respond_to do |format|
       format.html # new.html.erb

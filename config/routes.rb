@@ -1,13 +1,4 @@
 Youpon::Application.routes.draw do
-  get "home/index"
-
-  get "pages/home"
-
-  get "pages/contact"
-  
-  get "pages/about"
-  
-  get "pages/help"
 
   resources :rosters
 
@@ -24,6 +15,19 @@ Youpon::Application.routes.draw do
   resources :offers
 
   resources :users
+  
+	#5.2.2
+
+	match '/contact', :to => 'pages#contact'
+	
+	match '/about', :to => 'pages#about'
+	
+	match '/help', :to => 'pages#help'
+	
+	match '/signup', :to => 'users#new'
+	
+	#Debug page
+	get 'home/index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -74,7 +78,7 @@ Youpon::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "home#index"
+  root :to => 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 
