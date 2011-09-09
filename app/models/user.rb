@@ -20,9 +20,12 @@ class User < ActiveRecord::Base
   has_many :redemptions
 	attr_accessible :username, :email, :password, :nameFirst, :nameMiddle, :nameLast, :birthday, :gender, :zipCode
 	
+	email_regex =  /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+	
 	validates :username, :presence => true, 
 												:length => { :maximum => 50 }
-	validates :email, :presence => true
+	validates :email, :presence => true,
+												:format => { :with => email_regex }
 	validates :password, :presence => true
 	
 end
