@@ -20,7 +20,8 @@ class User < ActiveRecord::Base
   has_many :redemptions
 	attr_accessible :username, :email, :password, :nameFirst, :nameMiddle, :nameLast, :birthday, :gender, :zipCode
 	
-	validates :username, :presence => true
+	validates :username, :presence => true, 
+												:length => { :maximum => 50 }
 	validates :email, :presence => true
 	validates :password, :presence => true
 	
