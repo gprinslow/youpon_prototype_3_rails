@@ -5,22 +5,23 @@
 #  id                 :integer         not null, primary key
 #  username           :string(255)
 #  email              :string(255)
-#  nameFirst          :string(255)
-#  nameMiddle         :string(255)
-#  nameLast           :string(255)
+#  first_name         :string(255)
+#  middle_name        :string(255)
+#  last_name          :string(255)
 #  birthday           :date
 #  gender             :string(255)
-#  zipCode            :integer
+#  zip_code           :integer
 #  created_at         :datetime
 #  updated_at         :datetime
 #  encrypted_password :string(255)
+#  salt               :string(255)
 #
 
 require 'digest'
 class User < ActiveRecord::Base
   has_many :redemptions
 	attr_accessor :password
-	attr_accessible :username, :email, :password, :password_confirmation, :nameFirst, :nameMiddle, :nameLast, :birthday, :gender, :zipCode
+	attr_accessible :username, :email, :password, :password_confirmation, :first_name, :middle_name, :last_name, :birthday, :gender, :zip_code
 	
 	email_regex =  /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 	

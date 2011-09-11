@@ -5,15 +5,16 @@
 #  id                 :integer         not null, primary key
 #  username           :string(255)
 #  email              :string(255)
-#  nameFirst          :string(255)
-#  nameMiddle         :string(255)
-#  nameLast           :string(255)
+#  first_name         :string(255)
+#  middle_name        :string(255)
+#  last_name          :string(255)
 #  birthday           :date
 #  gender             :string(255)
-#  zipCode            :integer
+#  zip_code           :integer
 #  created_at         :datetime
 #  updated_at         :datetime
 #  encrypted_password :string(255)
+#  salt               :string(255)
 #
 
 require 'spec_helper'
