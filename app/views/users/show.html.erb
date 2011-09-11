@@ -1,56 +1,25 @@
-<h1>
-	<%= gravatar_for @user %>
-	<%= @user.username %>
-</h1>
 
 
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Username:</b>
-  <%= @user.username %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
-
-<p>
-  <b>Password:</b>
-  <%= @user.password %>
-</p>
-
-<p>
-  <b>First Name:</b>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <b>Middle Name:</b>
-  <%= @user.middle_name %>
-</p>
-
-<p>
-  <b>Last Name:</b>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <b>Birthday:</b>
-  <%= @user.birthday %>
-</p>
-
-<p>
-  <b>Gender:</b>
-  <%= @user.gender %>
-</p>
-
-<p>
-  <b>Zip Code:</b>
-  <%= @user.zip_code %>
-</p>
-
-
+<table class="profile" summary="Profile information">
+	<tr>
+		<td class="main">
+			<h1>
+				<%= gravatar_for @user %>
+				<%= @user.username %>
+			</h1>
+		</td>
+		<td class="sidebar round">
+			<strong>Name</strong> <%= @user.first_name %> <%= @user.middle_name %> <%= @user.last_name %><br />
+			<strong>Email</strong> <%= @user.email %><br />
+			<strong>Birthday</strong> <%= @user.birthday %><br />
+			<strong>Gender</strong> <%= @user.gender %><br />
+			<strong>Zip Code</strong> <%= @user.zip_code %><br />
+		</td>
+	</tr>
+</table>
+</br>
+</br>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
