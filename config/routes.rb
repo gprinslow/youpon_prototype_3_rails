@@ -1,5 +1,7 @@
 Youpon::Application.routes.draw do
 
+  get "sessions/new"
+
   resources :rosters
 
   resources :managers
