@@ -50,6 +50,8 @@ class UsersController < ApplicationController
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
         @title = "Sign up"
+				@user.password = ""
+				@user.password_confirmation = ""
 				format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end
