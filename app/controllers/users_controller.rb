@@ -46,7 +46,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { flash[:success] = "Welcome to Youpon!"; redirect_to(@user) }
+        format.html { sign_in @user; flash[:success] = "Welcome to Youpon!"; redirect_to(@user) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
         @title = "Sign up"

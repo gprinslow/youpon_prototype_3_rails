@@ -17,7 +17,15 @@ Youpon::Application.routes.draw do
   resources :offers
 
   resources :users
+
+#  9.2
+	resources :sessions, :only => [:new, :create, :destroy]
   
+	# 9.2
+	match '/signup', :to => 'users#new'
+	match '/signin', :to => 'sessions#new'
+	match '/signout', :to => 'sessions#destroy'
+	
 	#5.2.2
 
 	match '/contact', :to => 'pages#contact'
@@ -25,8 +33,6 @@ Youpon::Application.routes.draw do
 	match '/about', :to => 'pages#about'
 	
 	match '/help', :to => 'pages#help'
-	
-	match '/signup', :to => 'users#new'
 	
 	#Debug page
 	get 'home/index'
