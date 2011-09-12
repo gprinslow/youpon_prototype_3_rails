@@ -26,7 +26,6 @@ class UsersController < ApplicationController
   # GET /users/new.xml
   def new
     @title = "Sign up"
-
 		@user = User.new
 
     respond_to do |format|
@@ -50,7 +49,8 @@ class UsersController < ApplicationController
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
-        format.html { render :action => "new" }
+        @title = "Sign up"
+				format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
