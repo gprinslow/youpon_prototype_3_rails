@@ -1,5 +1,7 @@
 Youpon::Application.routes.draw do
 
+  get "reports/index"
+
   get "sessions/new"
 
   resources :rosters
@@ -20,6 +22,9 @@ Youpon::Application.routes.draw do
 
 #  9.2
 	resources :sessions, :only => [:new, :create, :destroy]
+	
+	#Reports
+	resources :reports
   
 	# 9.2
 	match '/signup', :to => 'users#new'

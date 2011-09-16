@@ -1,0 +1,35 @@
+<h1>Reports</h1>
+<h3><%= @merchant.name %></h3>
+
+<table>
+  <tr>
+    <th>Offer Title</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Redeemed By</th>
+    <th>Status</th>
+    <th>Created</th>
+		<th>Updated</th>
+  </tr>
+
+	<% @offers.each do |offer| %>
+		<% offer.redemptions.each do |redemption| %>
+		<tr>
+	    <td><%= offer.title %></td>
+	    <td><%= offer.start %></td>
+	    <td><%= offer.end %></td>
+			<td><%= redemption.user_id %></td>
+    	<td><%= redemption.status %></td>
+    	<td><%= redemption.created_at %></td>
+  		<td><%= redemption.updated_at %></td>
+  	</tr>
+		<% end %>
+	<% end %>
+
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<%= link_to 'Home', root_path %>
