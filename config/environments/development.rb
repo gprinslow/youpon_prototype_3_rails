@@ -4,6 +4,10 @@ Youpon::Application.configure do
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
   # since you don't have to restart the webserver when you make code changes.
+	#SSL
+	require 'rack/ssl'
+	config.middleware.insert_before ActionDispatch::Static, Rack::SSL
+
   config.cache_classes = false
 
   # Log error messages when you accidentally call methods on nil.
@@ -22,5 +26,6 @@ Youpon::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
 end
 

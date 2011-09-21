@@ -1,0 +1,50 @@
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: md5WithRSAEncryption
+        Issuer: C=US, ST=MO, L=St. Louis, O=Garrison Prinslow, OU=Student, CN=Garrison Prinslow/emailAddress=gprinslow@gmail.com
+        Validity
+            Not Before: Sep 21 22:32:17 2011 GMT
+            Not After : Sep 20 22:32:17 2012 GMT
+        Subject: C=US, ST=MO, L=St. Louis, O=Garrison Prinslow, OU=Student, CN=0.0.0.0/emailAddress=gprinslow@gmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:b0:04:50:65:ae:53:48:f9:48:15:f6:f0:fe:4d:
+                    87:91:93:59:d6:0f:0d:08:4b:01:af:2b:c5:42:67:
+                    b1:a8:5a:04:3d:9d:90:d3:7f:4e:d8:82:49:69:d7:
+                    fa:38:62:00:74:7f:0e:39:e8:92:c9:7a:99:e8:3a:
+                    39:e2:f7:7b:5c:76:2c:f9:96:4e:64:1a:fe:f7:7b:
+                    a2:39:57:b5:58:ac:d3:07:50:60:53:03:21:f7:e5:
+                    87:38:8d:af:31:cd:8b:4e:57:36:dc:c1:07:a7:fe:
+                    df:b2:0c:cd:2e:79:c8:4f:d9:02:8a:9c:fd:26:7c:
+                    33:a7:57:9f:21:8e:9d:c9:19
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: md5WithRSAEncryption
+        7b:6a:80:5a:f5:16:39:ed:67:4f:5b:fb:a4:76:ba:b1:77:97:
+        fe:13:ff:32:8d:89:f1:18:c8:62:7d:39:fb:f2:b8:45:b7:f7:
+        d8:be:20:6c:ac:5f:98:c9:28:ef:cf:3a:a0:ce:8e:b9:2e:24:
+        86:94:76:a2:b8:64:ac:ed:3c:24:e2:51:7b:75:0a:d6:b6:75:
+        1a:ea:b8:6d:a5:6a:b5:23:fb:11:75:02:73:e5:6c:19:48:26:
+        5b:d5:84:cf:56:d2:e9:c8:0a:bc:6a:af:0a:d6:86:d0:c0:a0:
+        3a:0d:07:9c:8e:16:2b:aa:f2:04:43:9a:ee:90:d7:31:e0:24:
+        e5:f2
+-----BEGIN CERTIFICATE-----
+MIICnzCCAggCAQEwDQYJKoZIhvcNAQEEBQAwgZwxCzAJBgNVBAYTAlVTMQswCQYD
+VQQIEwJNTzESMBAGA1UEBxMJU3QuIExvdWlzMRowGAYDVQQKExFHYXJyaXNvbiBQ
+cmluc2xvdzEQMA4GA1UECxMHU3R1ZGVudDEaMBgGA1UEAxMRR2Fycmlzb24gUHJp
+bnNsb3cxIjAgBgkqhkiG9w0BCQEWE2dwcmluc2xvd0BnbWFpbC5jb20wHhcNMTEw
+OTIxMjIzMjE3WhcNMTIwOTIwMjIzMjE3WjCBkjELMAkGA1UEBhMCVVMxCzAJBgNV
+BAgTAk1PMRIwEAYDVQQHEwlTdC4gTG91aXMxGjAYBgNVBAoTEUdhcnJpc29uIFBy
+aW5zbG93MRAwDgYDVQQLEwdTdHVkZW50MRAwDgYDVQQDEwcwLjAuMC4wMSIwIAYJ
+KoZIhvcNAQkBFhNncHJpbnNsb3dAZ21haWwuY29tMIGfMA0GCSqGSIb3DQEBAQUA
+A4GNADCBiQKBgQCwBFBlrlNI+UgV9vD+TYeRk1nWDw0ISwGvK8VCZ7GoWgQ9nZDT
+f07Ygklp1/o4YgB0fw456JLJepnoOjni93tcdiz5lk5kGv73e6I5V7VYrNMHUGBT
+AyH35Yc4ja8xzYtOVzbcwQen/t+yDM0uechP2QKKnP0mfDOnV58hjp3JGQIDAQAB
+MA0GCSqGSIb3DQEBBAUAA4GBAHtqgFr1FjntZ09b+6R2urF3l/4T/zKNifEYyGJ9
+OfvyuEW399i+IGysX5jJKO/POqDOjrkuJIaUdqK4ZKztPCTiUXt1Cta2dRrquG2l
+arUj+xF1AnPlbBlIJlvVhM9W0unICrxqrwrWhtDAoDoNB5yOFiuq8gRDmu6Q1zHg
+JOXy
+-----END CERTIFICATE-----

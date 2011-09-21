@@ -7,6 +7,7 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 group :development do
 	gem 'rspec-rails', '2.6.1'
 	gem 'annotate', '2.4.0'
+	gem 'rack-ssl', '1.3.2'
 end
 
 group :test do
@@ -18,6 +19,7 @@ group :test do
  	gem 'autotest-fsevent', '0.2.4'
   	gem 'autotest-growl', '0.2.9'
 	gem 'factory_girl_rails', '1.0'
+	gem 'rack-ssl', '1.3.2'
 end
 
 # Bundle edge Rails instead:
