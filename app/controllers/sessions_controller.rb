@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
 			sign_in user
+			flash[:success] = "Welcome back to Youpon!"
 			redirect_to user
     end
 
@@ -19,6 +20,7 @@ class SessionsController < ApplicationController
 	
 	def destroy
 		sign_out
+		flash[:success] = "You have successfully signed out."
 		redirect_to root_path
 	end
 
