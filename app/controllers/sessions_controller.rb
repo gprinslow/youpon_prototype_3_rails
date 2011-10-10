@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 		      render 'new'
 				}
 				format.json {
-					render :json => { :action => 'login', :error => 'invalid username/password' }
+					render :json => {:items => {:error => 'invalid username/password'} }
 				}
     	end
 		else
@@ -28,7 +28,7 @@ class SessionsController < ApplicationController
 					redirect_to user
 				}
 				format.json {
-					render :json => { :action => 'login', :owner => current_user }
+					render :json => {:items => current_user }
 				}
 			end
     end
